@@ -21,8 +21,8 @@ function y = FastToeplitzSymVec(c,x)
 
 n = size(c,1);
 cext = [conj(flipud(c(2:n)));c];
-xext = [x;zeros(n-1,1)];
+xext = [x;zeros(n-1,size(x,2))];
 yext = ifft(fft(cext).*fft(xext));
-y = yext(n:end);
+y = yext(n:end,:);
 
 end

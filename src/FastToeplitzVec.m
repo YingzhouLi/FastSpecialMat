@@ -36,8 +36,8 @@ if c(1) ~= r(1)
              ' conflict.']);
 end
 cext = [flipud(r(2:k));c];
-xext = [x;zeros(n-1,1)];
+xext = [x;zeros(n-1,size(x,2))];
 yext = ifft(fft(cext).*fft(xext));
-y = yext(k:end);
+y = yext(k:end,:);
 
 end
