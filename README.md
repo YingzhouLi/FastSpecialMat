@@ -1,9 +1,14 @@
 ###Fast Special Matrix
 ========
 
-This code supports the fast applications of circulant matrices, Hankel matrices, Hankel circulant matrices,
-Toeplitz matrices and Toeplitz symmetric matrices. The complexities of all these applications are O(N log N)
-where N is the size of matrices.
+This code supports the fast applications of circulant matrices, Hankel
+matrices, Hankel circulant matrices, Toeplitz matrices and Toeplitz
+symmetric matrices. The complexities of all these applications are $O(N log
+N)$ where $N$ is the size of matrices.
+
+This code also supports some factorizations for sparse matrices. If the
+sparse matrix can be permuted to a block diagonal matrix, functions such as
+`speig` could give a significant speed-up.
 
 The following instructions work in Matlab.
 
