@@ -3,8 +3,8 @@
 
 This code supports the fast applications of circulant matrices, Hankel
 matrices, Hankel circulant matrices, Toeplitz matrices and Toeplitz
-symmetric matrices. The complexities of all these applications are $O(N log
-N)$ where $N$ is the size of matrices.
+symmetric matrices. The complexities of all these applications are O(N log
+N) where N is the size of matrices.
 
 This code also supports some factorizations for sparse matrices. If the
 sparse matrix can be permuted to a block diagonal matrix, functions such as
